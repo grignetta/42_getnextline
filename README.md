@@ -1,8 +1,9 @@
-# get_next_line (mandatory)
+# get_next_line (mandatory&bonus)
 
 ## 📖 About
-Mandatory part of 42’s `get_next_line`: read a file descriptor **one line at a time**.
+**Mandatory part** of 42’s `get_next_line`: read a file descriptor **one line at a time**.
 Returns a newly allocated string, or `NULL` on EOF/error.
+**Bonus part** of 42’s `get_next_line`: **supports multiple FDs** concurrently by keeping per-FD state.
 
 ## Function prototype
 ```bash

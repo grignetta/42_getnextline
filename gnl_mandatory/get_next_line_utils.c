@@ -12,7 +12,7 @@
 
 #include "get_next_line.h"
 
-size_t	ft_strlen(char *s)
+size_t	ft_strlen_gnl(char *s)
 {
 	size_t	i;
 
@@ -31,15 +31,15 @@ void	my_free(char **str)
 	*str = NULL;
 }
 
-char	*ft_strjoin(char *read_str, char *buff)
+char	*ft_strjoin_gnl(char *read_str, char *buff)
 {
 	size_t	i;
 	size_t	j;
 	char	*str;
 
-	if ((ft_strlen(read_str) + ft_strlen(buff)) == 0)
+	if ((ft_strlen_gnl(read_str) + ft_strlen_gnl(buff)) == 0)
 		return (NULL);
-	str = malloc(sizeof(char) * ((ft_strlen(read_str) + ft_strlen(buff)) + 1));
+	str = malloc(sizeof(char) * ((ft_strlen_gnl(read_str) + ft_strlen_gnl(buff)) + 1));
 	if (str == NULL)
 		return (my_free(&read_str), my_free(&buff), NULL);
 	i = 0;

@@ -110,6 +110,6 @@ char	*get_next_line(int fd)
 			return (extract_til_nl_or_end(&buff));
 		else if (!read_bytes)
 			return (NULL);
-		buff = ft_strjoin(buff, read_bytes);
+		buff = ft_strjoin_gnl(buff, read_bytes);
 	}
 }

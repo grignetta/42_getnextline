@@ -22,9 +22,9 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-size_t	ft_strlen(char *str);
+size_t	ft_strlen_gnl(char *str);
 void	my_free(char **str);
-char	*ft_strjoin(char *read_str, char *buff);
+char	*ft_strjoin_gnl(char *read_str, char *buff);
 char	*del_buf_return_res(char **buffer, char *res, int len_to_del);
 char	*extract_til_nl_or_end(char **buff);
 char	*read_buff_size(int fd, char **buffer);
